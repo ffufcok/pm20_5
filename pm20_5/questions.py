@@ -1,9 +1,16 @@
+import pkg_resources
+
+
 def q1(qn=0):
     from PIL import ImageGrab
     from IPython.display import display, Image
     import os
     if not qn:
-        img = Image(filename='q1/q1_task1.png')
+        resource_package = __name__
+        resource_path = '/'.join(('q1', 'q1_task1.png'))
+        template = pkg_resources.resource_string(resource_package, resource_path)
+        
+        img = Image(filename=template)
         display(img)
         img = Image(filename='q1/q1_task2.png')
         display(img)
