@@ -3,7 +3,8 @@ def q1(qn=0):
     from IPython.display import display, Image
     import os
     if not qn:
-        here = os.path.dirname(os.path.abspath(__file__))
+        here = os.path.abspath('')
+        print('here')
         data = os.path.join(here, "q1", "q1_task1.png")
         img = Image(filename=data)
         display(img)
