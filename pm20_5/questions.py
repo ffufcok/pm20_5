@@ -1,10 +1,10 @@
 def q1(qn=0):
+    from importlib.resources import contents
     from PIL import ImageGrab
     from IPython.display import display, Image
     import os
     if not qn:
-        here = os.path.abspath('')
-        print('here')
+        print(contents('pm20-5.q1'))
         data = os.path.join(here, "q1", "q1_task1.png")
         img = Image(filename=data)
         display(img)
