@@ -1,13 +1,16 @@
 def q1(qn=0):
-    from importlib.resources import contents
+    from importlib.resources import contents, path
     from PIL import ImageGrab
     from IPython.display import display, Image
     import os
     if not qn:
-        print(contents('pm20-5.q1'))
-        data = os.path.join(here, "q1", "q1_task1.png")
-        img = Image(filename=data)
-        display(img)
+        print(sorted(contents('pm20_5')))
+        with path(
+                'pm20_5',
+                'q1_1_2.png'
+                ) as pt:
+            img = Image(filename=pt)
+            display(img)
         img = Image(filename='q1/q1_task2.png')
         display(img)
     else:
