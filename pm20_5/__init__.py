@@ -1,1 +1,1 @@
-from pm20_5.questions import q1, q2, q3
+from pm20_5.questions import q1, q2, q3, q4, q6
