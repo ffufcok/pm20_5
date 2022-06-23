@@ -10,7 +10,7 @@ setup(
   author = 'Ivan Ivanov',                   # Type in your name
   author_email = 'your.email@domain.com',      # Type in your E-Mail
   url = 'https://github.com/user/reponame',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/ffufcok/pm20_5/archive/refs/tags/0.47.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/ffufcok/pm20_5/archive/refs/tags/0.50.tar.gz',    # I explain this later on
   keywords = ['SOME', 'MEANINGFULL', 'KEYWORDS'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'pillow',
