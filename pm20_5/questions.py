@@ -166,3 +166,30 @@ def q6(qn=0):
                 ) as pt:
                 img = Image(filename=pt)
                 display(img)
+
+
+def q5(qn=0):
+    if not qn:
+        with path(
+                'pm20_5.qu5',
+                'q5_task1.png'
+                ) as pt:
+            img = Image(filename=pt)
+            display(img)
+    else:
+        qn = str(qn)
+        files = sorted(contents('pm20_5.qu5'))
+        to_disp = []
+        for elem in files:
+            if 'q5' + '_' + qn + '_' in elem:
+                to_disp.append(elem)
+        if not to_disp:
+            to_disp.append('q5_' + qn + '.png')
+        to_disp.sort()
+        for elem in to_disp:
+            with path(
+                'pm20_5.qu5',
+                elem
+                ) as pt:
+                img = Image(filename=pt)
+                display(img)
