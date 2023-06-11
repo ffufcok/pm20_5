@@ -193,3 +193,6 @@ def q5(qn=0):
                 ) as pt:
                 img = Image(filename=pt)
                 display(img)
+
+def econ():
+    print('Exam is soon!')
